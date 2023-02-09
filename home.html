@@ -6,10 +6,10 @@
 	<meta charset="UTF-8" />
 	<meta name="format-detection" content="telephone=no" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230208154614" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230209095823" />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css?_v=20230208154614" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css?_v=20230209095823" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
@@ -18,20 +18,24 @@
 		<header class="header">
 			<div class="header__container-big">
 				<a href="home.html" class="header__logo">FarmVest</a>
-				<!-- <div class="header__action">
-      <button type="button" class="header__theme"></button>
-      <button type="button" class="header__reset"></button>
-    </div> -->
+				<div class="header__action">
+					<button type="button" class="header__theme"></button>
+					<button type="button" class="header__reset"></button>
+				</div>
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
 							<li class="menu__item">
-								<a href="" class="menu__link">Home</a>
+								<a href="#" data-goto=".page__main-block" class="menu__link">Home</a>
 							</li>
-							<li class="menu__item"><a href="" class="menu__link">About</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Feachers</a></li>
 							<li class="menu__item">
-								<a href="" class="menu__link">How it works</a>
+								<a data-goto-top="32" data-goto=".page__how" href="#" class="menu__link">About</a>
+							</li>
+							<li class="menu__item">
+								<a data-goto-top="32" data-goto=".page__pathway" href="#" class="menu__link">Feachers</a>
+							</li>
+							<li class="menu__item">
+								<a data-goto-top="32" data-goto=".page__why" href="#" class="menu__link">How it works</a>
 							</li>
 						</ul>
 					</nav>
@@ -86,21 +90,11 @@
 			</section>
 			<div class="page__partners partners">
 				<div class="partners__container">
-					<div class="partners__item">
-						<img src="img/partners/white/01.svg" alt="Image" />
-					</div>
-					<div class="partners__item">
-						<img src="img/partners/white/02.svg" alt="Image" />
-					</div>
-					<div class="partners__item">
-						<img src="img/partners/white/03.svg" alt="Image" />
-					</div>
-					<div class="partners__item">
-						<img src="img/partners/white/04.svg" alt="Image" />
-					</div>
-					<div class="partners__item">
-						<img src="img/partners/white/05.svg" alt="Image" />
-					</div>
+					<div class="partners__item partners__item--1"></div>
+					<div class="partners__item partners__item--2"></div>
+					<div class="partners__item partners__item--3"></div>
+					<div class="partners__item partners__item--4"></div>
+					<div class="partners__item partners__item--5"></div>
 				</div>
 			</div>
 			<section class="page__how how">
@@ -119,9 +113,7 @@
 						</div>
 						<div class="how__items">
 							<div class="how__item item-how">
-								<div class="item-how__icon">
-									<img src="img/how/icons/white/01.svg" alt="Icon" />
-								</div>
+								<div class="item-how__icon"></div>
 								<div class="item-how__body">
 									<h3 class="item-how__title">Download FarmVest</h3>
 									<div class="item-how__text">
@@ -132,9 +124,7 @@
 								</div>
 							</div>
 							<div class="how__item item-how">
-								<div class="item-how__icon">
-									<img src="img/how/icons/white/02.svg" alt="Icon" />
-								</div>
+								<div class="item-how__icon"></div>
 								<div class="item-how__body">
 									<h3 class="item-how__title">DCreate account</h3>
 									<div class="item-how__text">
@@ -145,9 +135,7 @@
 								</div>
 							</div>
 							<div class="how__item item-how">
-								<div class="item-how__icon">
-									<img src="img/how/icons/white/03.svg" alt="Icon" />
-								</div>
+								<div class="item-how__icon"></div>
 								<div class="item-how__body">
 									<h3 class="item-how__title">Link your bank account</h3>
 									<div class="item-how__text">
@@ -158,9 +146,7 @@
 								</div>
 							</div>
 							<div class="how__item item-how">
-								<div class="item-how__icon">
-									<img src="img/how/icons/white/04.svg" alt="Icon" />
-								</div>
+								<div class="item-how__icon"></div>
 								<div class="item-how__body">
 									<h3 class="item-how__title">Start Investing</h3>
 									<div class="item-how__text">
@@ -181,7 +167,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__pathway">
+			<section class="page__pathway pathway">
 				<div class="pathway__container">
 					<div data-prlx-parent class="pathway__image image-block image-block--lb">
 						<div data-prlx data-coefficient="80" data-direction="-1" class="image-block__item">
@@ -334,9 +320,7 @@
 			<div class="footer__container-big">
 				<div class="footer__body body-footer">
 					<div class="body-footer__column">
-						<a href="home.html" class="body-footer__logo">
-							<img src="img/logo-footer.svg" alt="Logo" />
-						</a>
+						<a href="home.html" class="body-footer__logo"> </a>
 						<div class="body-footer__text">
 							<p>
 								High level experience in web design and development knowledge,
@@ -393,7 +377,7 @@
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20230208154614"></script>
+	<script src="js/app.min.js?_v=20230209095823"></script>
 </body>
 
 </html>
