@@ -1610,7 +1610,6 @@ body {
   position: relative;
   padding-bottom: 54.96%;
   overflow: hidden;
-  border-radius: 1.25rem 0 0 1.25rem;
 }
 
 .item-review__image img {
@@ -3716,7 +3715,6 @@ body {
   }
 
   .item-review:hover {
-    border-radius: 1.25rem;
     background: rgba(0, 128, 0, 0.1);
   }
 
