@@ -611,6 +611,11 @@ body::after {
 
 .button--popup {
   height: 3.75rem;
+  background-color: #008000;
+}
+
+.dark .button--popup {
+  background-color: #23b123;
 }
 
 @-webkit-keyframes form {
@@ -3224,6 +3229,18 @@ body::after {
 }
 
 @media (max-width: 47.99875em) {
+  .button--popup::before {
+    display: none;
+  }
+
+  .button::before {
+    display: none;
+  }
+
+  .button::after {
+    display: none;
+  }
+
   .icons-main-block__item {
     z-index: 1;
   }
