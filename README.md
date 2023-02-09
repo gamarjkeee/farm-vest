@@ -1,1 +1,1 @@
-https://gamarjkeee.github.io/farm-vest/
+https://gamarjkeee.github.io/farm-vest/home.html
