@@ -6,16 +6,16 @@
 	<meta charset="UTF-8" />
 	<meta name="format-detection" content="telephone=no" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230209104625" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230209205900" />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css?_v=20230209104625" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css?_v=20230209205900" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header data-lp class="header">
 			<div class="header__container-big">
 				<a href="home.html" class="header__logo">FarmVest</a>
 				<div class="header__action">
@@ -29,20 +29,20 @@
 								<a href="#" data-goto=".page__main-block" class="menu__link">Home</a>
 							</li>
 							<li class="menu__item">
-								<a data-goto-top="32" data-goto=".page__how" href="#" class="menu__link">About</a>
+								<a data-goto-top="32" data-goto=".page__pathway" href="#" class="menu__link">About</a>
 							</li>
 							<li class="menu__item">
-								<a data-goto-top="32" data-goto=".page__pathway" href="#" class="menu__link">Feachers</a>
+								<a data-goto-top="32" data-goto=".page__why" href="#" class="menu__link">Feachers</a>
 							</li>
 							<li class="menu__item">
-								<a data-goto-top="32" data-goto=".page__why" href="#" class="menu__link">How it works</a>
+								<a data-goto-top="32" data-goto=".page__how" href="#" class="menu__link">How it works</a>
 							</li>
 						</ul>
 					</nav>
 				</div>
 				<div class="header__buttons">
-					<a href="" data-da=".menu__body,991.98" class="header__button button button--lite">Sign In</a>
-					<a href="" data-da=".menu__body,991.98" class="header__button button button--h">Get Started</a>
+					<a data-popup="#popup" href="#" data-da=".menu__body,991.98" class="header__button button button--lite">Sign In</a>
+					<a href="#" data-goto-top="32" data-goto=".page__apps" data-da=".menu__body,991.98" class="header__button button button--h">Get Started</a>
 					<button type="button" class="header__icon icon-menu">
 						<span></span> <span></span> <span></span>
 					</button>
@@ -306,8 +306,10 @@
 						Download <span>FarmVest app</span> and invest in your future
 					</h2>
 					<div class="apps__buttons">
-						<a href="#" class="apps__link"> </a>
-						<a href="#" class="apps__link"> </a>
+						<a target="_blank" href="https://www.apple.com/app-store/" class="apps__link">
+						</a>
+						<a target="_blank" href="https://play.google.com/store/games" class="apps__link">
+						</a>
 					</div>
 					<div class="apps__decor">
 						<div data-prlx-mouse data-prlx-cx="400" data-prlx-cy="400" data-prlx-a="100" class="apps__circle apps__circle--1"></div>
@@ -345,15 +347,15 @@
 							<div class="socail-body-footer__label">Follow us</div>
 							<ul class="socail-body-footer__list">
 								<li class="socail-body-footer__item">
-									<a class="socail-body-footer__link" href="#">
+									<a class="socail-body-footer__link" target="_blank" href="https://www.instagram.com/">
 										<i class="fab fa-instagram icon"></i>
 									</a>
 								</li>
 								<li class="socail-body-footer__item">
-									<a class="socail-body-footer__link" href="#"><i class="fab fa-facebook-f icon"></i></a>
+									<a class="socail-body-footer__link" target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f icon"></i></a>
 								</li>
 								<li class="socail-body-footer__item">
-									<a class="socail-body-footer__link" href="#"><i class="fab fa-twitter icon"></i></a>
+									<a class="socail-body-footer__link" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter icon"></i></a>
 								</li>
 							</ul>
 						</div>
@@ -377,7 +379,59 @@
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20230209104625"></script>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__box">
+					<div class="popup__item popup__item--1">
+						<button data-close type="button" class="popup__close"></button>
+						<h3 class="popup__title">SIGN IN</h3>
+						<form action="#" class="popup__form form-popup">
+							<div class="form-popup__line">
+								<label class="form-popup__label" for="email">Email</label>
+								<input id="email" required autocomplete="off" type="email" name="email" placeholder="Enter your email" class="form-popup__input" />
+							</div>
+							<div class="form-popup__line">
+								<label class="form-popup__label" for="pass">Password</label>
+								<input id="pass" required autocomplete="off" type="password" name="pass" placeholder="Enter your password" class="form-popup__input" />
+							</div>
+							<button type="submit" class="form-popup__button button button--popup">
+								Sign In
+							</button>
+							<a class="form-popup__forgot">Forgot Password?</a>
+						</form>
+						<div class="popup__change">
+							<span>Need an account?</span>
+							<a class="popup__item-up">SIGN UP</a>
+						</div>
+					</div>
+					<div class="popup__item popup__item--2">
+						<button data-close type="button" class="popup__close"></button>
+						<h3 class="popup__title">SIGN UP</h3>
+						<form action="#" class="popup__form form-popup">
+							<div class="form-popup__line">
+								<label class="form-popup__label" for="email">Email</label>
+								<input id="email" required autocomplete="off" type="email" name="email" placeholder="Enter your email" class="form-popup__input" />
+							</div>
+							<div class="form-popup__line">
+								<label class="form-popup__label" for="pass">Password</label>
+								<input required id="pass" autocomplete="off" type="password" name="pass" placeholder="Enter your password" class="form-popup__input" />
+							</div>
+							<button type="submit" class="form-popup__button button button--popup">
+								Sign Up
+							</button>
+							<div class="form-popup__forgot">Forgot Password?</div>
+						</form>
+						<div class="popup__change">
+							<span>Need an account?</span>
+							<a class="popup__item-in">SIGN IN</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230209205900"></script>
 </body>
 
 </html>
